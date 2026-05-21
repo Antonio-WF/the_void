@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Art Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Character Maker</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            margin: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .gallery {
+            height: 100vh;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: center;
+            background: #303030;
+            font-family: Arial, sans-serif;
+            color: white;
         }
-        .gallery img, .gallery video {
-            margin: 10px;
-            width: 45%;
-            height: auto;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        .container {
+            text-align: center;
         }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        .start-button {
+            padding: 15px 35px;
+            font-size: 20px;
+            border: none;
+            border-radius: 12px;
+            background: #f56200;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .start-button:hover {
+            background: white;
+            color: #f56200;
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Enter The Void?</h1>
+
+        <button class="start-button" onclick="openVoid()">
+            Yes
+        </button>
+    </div>
+
+    <script>
+        function openVoid() {
+            window.location.href = "void.html";
+        }
+    </script>
+
+</body>
+</html>

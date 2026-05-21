@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Void</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #303030;
+      color: #ffffff;
+    }
+
+    /* NAVBAR */
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background: #2a2a2a;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-item {
+      position: relative;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .nav-item a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      padding: 5px 0;
+    }
+
+    /* DROPDOWN */
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #1f1f1f;
+      border: 1px solid #1f2937;
+      border-radius: 8px;
+      min-width: 180px;
+      flex-direction: column;
+      z-index: 9999;
+    }
+
+    .dropdown a {
+      padding: 10px;
+      display: block;
+      color: #f56200;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background: #333;
+    }
+
+    /* KEEP OPEN ON HOVER (INCLUDING DROPDOWN ITSELF) */
+    .nav-item:hover .dropdown,
+    .dropdown:hover {
+      display: flex;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h1 {
+      font-size: 52px;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+
+    header p {
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #303030;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 24px;
+      border-bottom: 1px solid #1f2937;
+      padding-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .image-slot {
+      width: 100%;
+      height: 180px;
+      background: #303030;
+      border: 1px dashed #ffffff;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      margin-bottom: 15px;
+      overflow: hidden;
+    }
+
+    .text {
+      color: #ffffff;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+
+    .columns {
+      display: flex;
+      gap: 15px;
+    }
+
+    .column {
+      flex: 1;
+      background: #303030;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #1f2937;
+      color: #ffffff;
+    }
+
+    a {
+      color: #f56200;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #ffffff;
+      border-top: 1px solid #1f2937;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION MENU -->
+  <div class="nav">
+
+    <div class="nav-item">
+      <a href="#">Void Lore</a>
+      <div class="dropdown">
+        <a href="#">World Overview</a>
+        <a href="#">Timeline</a>
+        <a href="#">Secrets</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="#">Factions</a>
+      <div class="dropdown">
+        <a href="#">Major Factions</a>
+        <a href="#">Alliances</a>
+        <a href="#">Wars</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="#">Classes</a>
+      <div class="dropdown">
+        <a href="#">Warrior</a>
+        <a href="#">Mage</a>
+        <a href="#">Rogue</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="#">Races</a>
+      <div class="dropdown">
+        <a href="#">Human</a>
+        <a href="#">Elf</a>
+        <a href="#">Dwarf</a>
+      </div>
+    </div>
+
+    <div class="nav-item">
+      <a href="#">Professions</a>
+      <div class="dropdown">
+        <a href="#">Smithing</a>
+        <a href="#">Alchemy</a>
+        <a href="#">Hunting</a>
+      </div>
+    </div>
+
+  </div>
+
+  <header>
+    <h1>The Void</h1>
+    <p>A living archive of worlds, lore, and forgotten knowledge</p>
+  </header>
+
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>World Overview</h2>
+        <div class="image-slot">Image Slot (World Map / Concept Art)</div>
+        <div class="text">
+          This is where you describe the world. You can write lore, history,
+          or any foundational information about your universe.
+        </div>
+        <a href="#">Example Link → Ancient Records</a>
+      </div>
+
+      <div class="card">
+        <h2>Factions</h2>
+        <div class="columns">
+          <div class="column">
+            <b>Faction A</b>
+            <p class="text">Description of faction A goes here.</p>
+          </div>
+          <div class="column">
+            <b>Faction B</b>
+            <p class="text">Description of faction B goes here.</p>
+          </div>
+        </div>
+        <a href="#">More Faction Lore →</a>
+      </div>
+
+      <div class="card">
+        <h2>Creatures & Entities</h2>
+        <div class="image-slot">Image Slot (Creature Art)</div>
+        <div class="text">
+          Add descriptions of creatures, monsters, or entities here.
+        </div>
+        <a href="#">Bestiary Index →</a>
+      </div>
+
+      <div class="card">
+        <h2>Knowledge Archives</h2>
+        <div class="text">
+          This section is for deep lore, hidden knowledge, secrets, and timeline events.
+        </div>
+        <a href="#">Open Archive →</a><br/>
+        <a href="#">Hidden Records →</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    The Void — Built as a living lore system
+  </footer>
+
+</body>
+</html>
