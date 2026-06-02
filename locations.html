@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Void - Locations</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #303030;
+      color: #ffffff;
+    }
+
+    /* NAVIGATION */
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background: #2a2a2a;
+      border-bottom: 1px solid #1f2937;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      color: #f56200;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 25px;
+    }
+
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    /* LOCATION CARDS */
+    .location-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+    }
+
+    .location-card {
+      background: #2a2a2a;
+      border: 1px solid #1f2937;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease;
+    }
+
+    .location-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .image-slot {
+      width: 100%;
+      height: 220px;
+      background: #303030;
+      border-bottom: 1px dashed #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .type {
+      color: #f56200;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .text {
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    a {
+      color: #f56200;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="void.html">The Void</a>
+    <a href="lore.html">Lore</a>
+    <a href="history.html">History</a>
+    <a href="locations.html">Locations</a>
+  </div>
+
+  <div class="container">
+
+    <h1>Locations of The Void</h1>
+
+    <p class="subtitle">
+      Explore kingdoms, ruins, forgotten cities, dangerous regions, and mysterious places across the world.
+      Add as many locations as needed to expand your universe.
+    </p>
+
+    <div class="location-grid">
+
+      <!-- LOCATION 1 -->
+      <div class="location-card">
+        <div class="image-slot">
+          Image Slot: Capital City
+        </div>
+
+        <div class="content">
+          <h2>Ashen Capital</h2>
+          <div class="type">Kingdom Capital</div>
+
+          <p class="text">
+            A massive fortified city built after the Great Collapse.
+            Known for political intrigue, towering walls, and ancient technology.
+          </p>
+
+          <a href="#">Explore location →</a>
+        </div>
+      </div>
+
+      <!-- LOCATION 2 -->
+      <div class="location-card">
+        <div class="image-slot">
+          Image Slot: Ancient Ruins
+        </div>
+
+        <div class="content">
+          <h2>The Forgotten Depths</h2>
+          <div class="type">Ancient Ruins</div>
+
+          <p class="text">
+            Hidden beneath the earth, these ruins contain knowledge and horrors
+            from civilizations long erased from history.
+          </p>
+
+          <a href="#">Discover ruins →</a>
+        </div>
+      </div>
+
+      <!-- LOCATION 3 -->
+      <div class="location-card">
+        <div class="image-slot">
+          Image Slot: Frozen Region
+        </div>
+
+        <div class="content">
+          <h2>The Frost Veil</h2>
+          <div class="type">Frozen Wasteland</div>
+
+          <p class="text">
+            A northern region covered in eternal snowstorms where ancient creatures
+            still roam beneath the ice.
+          </p>
+
+          <a href="#">Travel north →</a>
+        </div>
+      </div>
+
+
+      <!-- LOCATION 4 -->
+      <div class="location-card">
+        <div class="image-slot">
+          Image Slot: Void Portal
+        </div>
+
+        <div class="content">
+          <h2>The Black Gate</h2>
+          <div class="type">Void Anomaly</div>
+
+          <p class="text">
+            A mysterious gateway believed to connect reality with the Void itself.
+            Few who enter ever return unchanged.
+          </p>
+
+          <a href="#">Open archive →</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
