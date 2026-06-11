@@ -1,7 +1,6 @@
 // script.js
-fetch('navbar.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('navbar').innerHTML = data;
-  })
-  .catch(error => console.error('Error loading the navbar:', error));
+  fetch('navbar.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('nav').innerHTML = html;
+    });
