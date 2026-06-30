@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Void — Lore</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #303030;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 40px;
+      text-align: center;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    header h1 {
+      font-size: 52px;
+      letter-spacing: 2px;
+      color: #ffffff;
+    }
+
+    header p {
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    /* 3 BIG TABS */
+    .tabs {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .tab-card {
+      background: #2a2a2a;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 40px 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      text-align: center;
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .tab-card:hover {
+      background: #353535;
+      border-color: #f56200;
+      transform: translateY(-4px);
+      text-decoration: none;
+    }
+
+    .tab-card .tab-icon {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px dashed #ffffff;
+    }
+
+    .tab-card h2 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+      color: #ffffff;
+    }
+
+    .tab-card p {
+      margin: 0;
+      color: #aaaaaa;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .tab-card .tab-link {
+      margin-top: 10px;
+      color: #f56200;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    a {
+      color: #f56200;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #ffffff;
+      border-top: 1px solid #1f2937;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="nav"></div>
+  <script src="nav_script.js"></script>
+
+  <header>
+    <h1>The Void</h1>
+    <p>Explore the lore, history, and locations of the universe</p>
+  </header>
+
+  <div class="container">
+    <div class="tabs">
+
+      <a href="lore.html" class="tab-card">
+        <img class="tab-icon" src="lore-icon.png" alt="Lore" />
+        <h2>Lore</h2>
+        <p>Dive into the deep mythology, ancient texts, and foundational truths of the Void universe.</p>
+        <span class="tab-link">Explore Lore →</span>
+      </a>
+
+      <a href="history.html" class="tab-card">
+        <img class="tab-icon" src="history-icon.png" alt="History" />
+        <h2>History</h2>
+        <p>Trace the timeline of events, wars, empires, and turning points that shaped the known galaxy.</p>
+        <span class="tab-link">Explore History →</span>
+      </a>
+
+      <a href="locations.html" class="tab-card">
+        <img class="tab-icon" src="locations-icon.png" alt="Locations" />
+        <h2>Locations</h2>
+        <p>Discover the planets, stations, ruins, and hidden corners scattered across the Void.</p>
+        <span class="tab-link">Explore Locations →</span>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    The Void — Enter at your own risk
+  </footer>
+
+</body>
+</html>
